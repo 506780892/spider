@@ -1,0 +1,9 @@
+使用selenium对网易云音乐歌曲，处处吻前五页评论进行提取。
+
+网易云音乐html骨架中还有html，需要使用
+
+```
+driver.switch_to.frame()
+```
+
+进行切框。
