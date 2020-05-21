@@ -1,0 +1,11 @@
+使用scrapy对知乎所有推荐文章进行采集。
+
+zhihu.py中，判断是否有作者信息，无作者不采集。
+
+```python
+if content.get('question'):
+```
+
+setting中配置DEFAULT_REQUEST_HEADERS必须要有cookie和user-agent。
+
+pipelines中对文本数据进行提取保存，去除图片等一些干扰信息和链接。
